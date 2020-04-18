@@ -6,6 +6,6 @@ deps:
 lint:
 	flake8 hello_world test
 run:
-	PYTONPATH=. FLASK_APP=hello_world flask run
+	PYTHONPATH=. FLASK_APP=hello_world flask run
 test:
-	PYTONPATH=. py.test --verbose -s
+	PYTHONPATH=. py.test --verbose -s
