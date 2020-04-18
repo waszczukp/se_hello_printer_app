@@ -4,3 +4,5 @@ install:
 script:
   - make lint
   - make test
+docker_build:
+  docker build -t hello-world-printer .
