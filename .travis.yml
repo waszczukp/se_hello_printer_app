@@ -6,6 +6,5 @@ install:
 script:
   - make lint
   - make test
-  - make test_smoke
   - make docker_build
   - make docker_push
