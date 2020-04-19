@@ -1,4 +1,6 @@
 language: python
+services:
+  - docker
 install:
   - make deps
 script:
@@ -6,3 +8,5 @@ script:
   - make test
 docker_build:
   docker build -t hello-world-printer .
+after_success:
+  - make docker_build
