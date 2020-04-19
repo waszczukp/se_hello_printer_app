@@ -11,6 +11,9 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   # aktywowanie hermetycznego środowiska
   $ source .venv/bin/activate
+
+  #istnieje plik Makefile, ponizsze polecenia mozna wykona przy pomocy:
+   make deps:
   $ pip install -r requirements.txt
   $ pip install -r test_requirements.txt
 
@@ -27,6 +30,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ python main.py
 
   # albo:
+  make run
   $ PYTHONPATH=. FLASK_APP=hello_world flask run
   ```
 
@@ -34,9 +38,14 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   ```
   $ PYTHONPATH=. py.test
+  #albo
+  make test
   $ PYTHONPATH=. py.test --verbose -s
-  ```
 
+  #istnieje rowniez linter:
+  make lint
+  flake8 hello_world test
+  ```
 - Kontynuując pracę z projektem, aktywowanie hermetycznego środowiska dla aplikacji py:
 
   ```
@@ -47,14 +56,16 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   ...
 
-  # aktywacja 
+  # aktywacja
   $ source .venv/bin/activate
   ```
 
 - Integracja z TravisCI:
 
   ```
-  # miejsce na twoje notatki
+  # Dodaj do repozytorium plik .travis.yml
+  # Zaloguj do Travisa uzywajc konta gita i aktywuj projektem  
+  #
   ```
 
 # Pomocnicze
