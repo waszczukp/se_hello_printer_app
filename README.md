@@ -97,9 +97,9 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   # istnieje monitoring w aplikacji statuscake:
   # https://app.statuscake.com
   ## Embedded status image (Badge) z travisa:
-  #[![Build Status](https://travis-ci.org/waszczukp/se_hello_printer_app.svg?branch=master)](https://travis-ci.org/waszczukp/se_hello_printer_app)
+  [![Build Status](https://travis-ci.org/waszczukp/se_hello_printer_app.svg?branch=master)](https://travis-ci.org/waszczukp/se_hello_printer_app)
   ## Embedded status image (Badge) z statuscake:
-  #<a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=gbmdY7tXvD&Days=1&Design=1" /></a>
+  <a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=gbmdY7tXvD&Days=1&Design=1" /></a>
   ```
 
 # Pomocnicze
