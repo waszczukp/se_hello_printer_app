@@ -3,8 +3,9 @@ PLAIN = "plain"
 PLAIN_UP = "plain_uppercase"
 PLAIN_LO = "plain_lowercase"
 JSON = "json"
+XML = "xml"
 
-SUPPORTED = [PLAIN, PLAIN_UP, PLAIN_LO, JSON]
+SUPPORTED = [PLAIN, PLAIN_UP, PLAIN_LO, JSON, XML]
 
 
 def get_formatted(msg, imie, format):
@@ -29,10 +30,10 @@ def format_to_json(msg, imie):
 
 def format_to_xml(msg, imie):
     return (
-    <greetings>
-        <name>imie</name>
-        <msg>msg</msg>
-    </greetings>)
+        "<greetings>"
+        "<name>" + imie + "</name>"
+        "<msg>" + msg + "</msg>"
+        "</greetings>")
 
 
 def plain_text(msg, imie):
