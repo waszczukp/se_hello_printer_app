@@ -68,6 +68,15 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   #
   ```
 
+- Integracja Travis z Docker:
+
+  ```
+  # Dodaj do Travisa zmiena DOCKER_PASSWORD
+  # W Dockerfile wprowadz logowanie w stage'u docker_push:
+  # @docker login --username $(USERNAME) --password $${DOCKER_PASSWORD}   
+  # zwroc uwage na roznice w podanych zmiennych $() vs $${}
+  ```
+
 - Integracja z Heroku:
   ```
   # Zainstalowac gunicorn i flask
