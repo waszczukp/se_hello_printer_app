@@ -68,6 +68,21 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   #
   ```
 
+- Integracja z Heroku:
+  ```
+  # Zainstalowac gunicorn i flask
+  # Nalezy stworzyk plik procfile z linia:
+  # echo 'web: gunicorn hello_world:app'
+  # Zainstalowac i sprawdzic heroku:
+  ## sudo snap install --classic Heroku
+  ## heroku login -i
+  ## heroku create
+  ## git remote -v - sprawdzic, czy jest remote dla heroku (i url apki)
+  ## git push heroku master - upewnic sie wczesniej, ze git widzi
+  ## Procfile
+  ## wejsc na url apki
+  ```
+
 # Pomocnicze
 
 ## Ubuntu
