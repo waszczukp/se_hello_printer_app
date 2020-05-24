@@ -6,7 +6,7 @@ test:
   image: "python:3"
   stage: test
   script:
-  - apk add --update make
+  - apt-get --update make
   - make deps
   - make test
 docker_build:
@@ -15,5 +15,5 @@ docker_build:
     - docker:dind
   stage: docker_build
   script:
-  - apk add --update make
+  - apt-get --update make
   - make docker_build
