@@ -15,4 +15,12 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_output(self):
         rv = self.app.get('/?output=json')
-        self.assertEqual(b'{ "imie":"Michal", "mgs":Hello World!"}', rv.data)
+        self.assertEqual(b'{ "imie":"moje_imie", "mgs":Hello World!"}', rv.data)
+
+    def test_name(self):
+        rv = self.app.get('/?name=Patrycja')
+        self.assertEqual(b'Patrycja Hello World!', rv.data)
+
+    def test_default_name(self):
+        rv = self.app.get('/')
+        self.assertEqual(b'moje_imie Hello World!', rv.data)
