@@ -25,8 +25,7 @@ pipeline {
                           skipNoTestFiles: false,
                           stopProcessingIfError: true)
                   ]
-              ]
-        	}
+        	   }
         }
     }
 }
