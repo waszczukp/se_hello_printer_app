@@ -96,6 +96,17 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ## wejsc na url apki
   ```
 
+- Integracja z Heroku:
+  ```
+  # utworzyc konto na gitlabie
+  # wybrac Repo by URL
+  # podac url z gita: .git - clone z guzika
+  # dodac remote: git remote add adres_z_gitlaba
+  ## github: git push 
+  ## gitlab: git push gitlab master
+  # sprawdzic czy stage sa zielone
+  ```
+
 - Monitoring:
   ```
   # istnieje monitoring w aplikacji statuscake:
